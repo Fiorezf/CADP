@@ -1,0 +1,40 @@
+Son apuntes que hice para poder diferenciar los usos de los vectores. 
+
+
+>Vectores contadores 
+-generalmente se usan cuando nos piden cantidades
+-deben inicializarse con 0 
+ej consigna: {  el código de género de actuación que prefiere (1: drama, 2: romántico, 3: acción, 4: suspenso, 5: terror). 
+» b. Informar los dos códigos de género más elegidos. } 
+
+ej en acción: vc[l^.dato.cod]:=vc[l^.dato.cod] + 1;
+----------------------------------------------------------------
+>vectores de registros
+
+ej consigna: { Una empresa de transporte de cargas dispone de la información de su flota compuesta por 100 camiones.
+De cada camión se tiene: patente, año de fabricación y capacidad (peso máximo en toneladas que puede
+transportar). } 
+
+ej en el Type: vector = array [1..100] of camion; (camion es el registro) 
+
+ej en acción: vector[indice].nombre_campo
+-----------------------------------------------------------------
+>Vectores dentro de registros 
+
+ej consigna: { Para ello se deberá leer la información de cada alumno, a saber:
+número de alumno, apellido, nombres, dirección de correo electrónico, año de ingreso, año de egreso y las
+notas obtenidas en cada una de las 24 materias que aprobó (los aplazos no se registran). } 
+
+ej en el type: 
+alumno = record
+(campos campos campos )
+notas:VecNotas;   <--------------
+end; 
+vecNotas = array [1..24] of rangoNotas;
+rangoNotas = 1..10;
+
+
+
+
+
+
