@@ -182,7 +182,7 @@ end;
    maximos(maxi1,maxi2,codigo1,codigo2,promedios,l^.dato.cod);
 
 
- 
+  L:= L^.sig;
  end; 
  recorrerContador(vceq);
  writeln(cod1,cod2); 
@@ -205,3 +205,4 @@ end;
  generarListaNueva(list,list2); 
  
 end;
+
