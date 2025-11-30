@@ -123,6 +123,7 @@ for i:=1 to df do begin
  writeln(l^.dato.dni); 
  writeln(totPasajes); 
  vuelos(vc); 
+  L:= L^.sig;
  end; 
  writeln(suma); 
  end; 
@@ -138,4 +139,5 @@ for i:=1 to df do begin
  end;
  
  
+
 
